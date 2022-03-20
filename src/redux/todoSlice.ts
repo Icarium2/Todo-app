@@ -1,11 +1,11 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { Todo } from "../models/todo";
+import { Todo } from "../models/Todo";
 import { v4 as uuidv4 } from "uuid";
 
+//Initial state: Empty array as type todo
 const initialState = [] as Todo[]
 
 const todoSlice = createSlice({
-
     name: "todos",
     initialState,
     reducers: {
